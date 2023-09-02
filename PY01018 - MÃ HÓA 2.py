@@ -8,5 +8,5 @@ while True:
     k = int(k)
     res = ""
     for i in s:
-        res += p[(p.find(i)) % 28]
+        res += p[(p.find(i) + k) % 28]
     print(res[::-1])
